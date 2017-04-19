@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "lib": [ "es2015"],
+        "allowJs": false,
+        "target": "es5",
+        "removeComments": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "alwaysStrict": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true
+    },
+    "typeAcquisition": {
+        "enable": true
+    }
+}

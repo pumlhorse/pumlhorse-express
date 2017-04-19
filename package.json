@@ -1,0 +1,30 @@
+{
+  "name": "pumlhorse-express",
+  "version": "0.1.0",
+  "description": "Router for Express that uses Pumlhorse as a controller",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pumlhorse/pumlhorse-express.git"
+  },
+  "keywords": [
+    "express",
+    "router"
+  ],
+  "author": "Revelio <support@getrevelio.com> (https://www.getrevelio.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pumlhorse/pumlhorse-express/issues"
+  },
+  "homepage": "https://github.com/pumlhorse/pumlhorse-express#readme",
+  "devDependencies": {
+    "@types/node": "^7.0.12"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "pumlhorse": "^2.3.1"
+  }
+}

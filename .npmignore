@@ -1,0 +1,10 @@
+.vscode
+spec
+tests
+integrationTests
+examples
+src
+lib/**/*.map
+configs
+typings
+tsconfig.json
