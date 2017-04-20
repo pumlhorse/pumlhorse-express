@@ -32,10 +32,6 @@ function noContent($webserverResponse, $scope) {
     end($webserverResponse, 204, null, $scope)
 }
 
-function writeView(view, data, $webserverResponse, $scope) {
-  $webserverResponse.render(view, data, $scope);
-}
-
 function badRequest($all, $webserverResponse, $scope) {
     end($webserverResponse, 400, $all, $scope)
 }
@@ -51,4 +47,8 @@ function serverError($all, $webserverResponse, $scope) {
 function end(response, code, body, $scope) {
   response.status(code).send(body);
   $scope.end();
+}
+
+function writeView(view, data, $webserverResponse, $scope) {
+  $webserverResponse.render(view, data, $scope);
 }
