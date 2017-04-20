@@ -4,7 +4,8 @@
   "description": "Router for Express that uses Pumlhorse as a controller",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc -p ./configs/tsconfig.publish.json"
   },
   "repository": {
     "type": "git",
