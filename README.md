@@ -72,6 +72,8 @@ The following functions are available for returning responses:
 * `accepted` - Returns 202
 * `noContent` - Returns 204
 * `badRequest` - Returns 400
+* `unauthorized` - Returns 401
+* `forbidden` - Returns 403
 * `notFound` - Returns 404
 
 These functions can be used as follows:

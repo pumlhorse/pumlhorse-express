@@ -8,6 +8,8 @@ pumlhorse.module('pumlhorse-webserver')
   .function('accepted', accepted)
   .function('noContent', noContent)
   .function('badRequest', badRequest)
+  .function('unauthorized', unauthorized)
+  .function('forbidden', forbidden)
   .function('notFound', notFound)
   .function('serverError', serverError)
   .function('html', writeView);
@@ -34,6 +36,14 @@ function noContent($webserverResponse, $scope) {
 
 function badRequest($all, $webserverResponse, $scope) {
     end($webserverResponse, 400, $all, $scope)
+}
+
+function unauthorized($all, $webserverResponse, $scope) {
+    end($webserverResponse, 401, $all, $scope)
+}
+
+function forbidden($all, $webserverResponse, $scope) {
+    end($webserverResponse, 403, $all, $scope)
 }
 
 function notFound($all, $webserverResponse, $scope) {
